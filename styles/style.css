@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primary Colors */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan-background: hsl(178, 100%, 50%, 0.4);
+  --cyan-text: hsl(178, 100%, 50%);
+
+  /* Neutral Colors */
+  --main-background: hsl(217, 54%, 11%);
+  --card-background: hsl(216, 50%, 16%);
+  --line-background: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-background);
+}
+.container {
+  width: auto;
+  height: auto;
+  background-color: var(--card-background);
+  padding: 1.7rem;
+  margin: 2rem 0 2rem 0;
+  border-radius: 1.5rem;
+  max-width: 30rem;
+}
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.hero {
+  border-radius: 1rem;
+  max-width: 100%;
+}
+.view {
+  position: absolute;
+  background-color: var(--cyan-background);
+  opacity: 0;
+  border-radius: 0.6rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view img {
+  width: 3rem;
+  height: 3rem;
+}
+.view:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.title {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.title:hover {
+  color: var(--cyan-text);
+  cursor: pointer;
+}
+.text {
+  color: var(--soft-blue);
+  line-height: 1.5;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+ul:first-child {
+  color: var(--cyan-text);
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.creation {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.creation img {
+  max-width: 3rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+.creation a {
+  color: var(--white);
+  text-decoration: none;
+}
+.creation a:hover {
+  color: var(--cyan-text);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
